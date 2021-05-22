@@ -1,0 +1,23 @@
+/* To calculate the sum and percentage of 5 numbers */
+
+
+   #include <stdio.h>
+   #include <stdlib.h>
+
+   int main()
+{
+   int math,phy,bio,chem,eng,sum;       
+   float perc;
+   
+   printf("Enter the subject marks\n",math,bio,chem,eng);
+   scanf("%d %d %d %d %d",&math,&phy,&bio,&chem,&eng);
+   
+   sum=math+phy+bio+chem+eng;                              //calculating the sum of 5 subjects
+   printf("sum is %d\n",sum);
+   
+   perc= sum/5;                                            //calculating the percentage 
+   printf("percentage is %f\n",perc);
+   
+   
+    return 0;
+}
