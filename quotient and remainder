@@ -1,0 +1,20 @@
+/* To calculate quotient and remainder of 2 numbers */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a,b,quot,rem;                                
+
+   printf("Enter the dividend and divisor:\n",a,b);
+   scanf("%d %d",&a,&b);
+
+   quot=a/b;                                            //calculating quotient and remainder
+   rem=a%b;
+
+   printf("Quotient and remainder is %d %d",quot,rem);
+
+    return 0;
+}
