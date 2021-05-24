@@ -1,0 +1,29 @@
+/* To calculate profit and loss */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world!\n");
+    float sp,cp,profit,loss;
+
+    printf("Enter the selling price and cost price\n",sp,cp);
+    scanf("%f %f",&sp,&cp);
+
+    profit=sp-cp;
+    loss=cp-sp;
+    
+
+    if(profit>0)
+    printf("Profit is earned");
+
+    if(profit<0)
+    printf("Loss is incurred");
+
+
+
+    return 0;
+}
