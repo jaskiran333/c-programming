@@ -1,0 +1,24 @@
+/* To calcualte factorial of a given number */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i=1,n,factorial=1;
+    
+    printf("Enter the number whose factorial is to be found\n");
+    scanf("%i",&n);
+    
+    for(i=1;i<=n;i++){
+            
+    factorial*=i;
+                     }
+    printf("%d\n",factorial);
+    printf("\n is its factorial\n ");
+    
+    
+    
+    return 0;
+}
