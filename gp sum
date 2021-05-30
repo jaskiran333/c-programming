@@ -1,0 +1,23 @@
+/* To calculate sum of gp series */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,r,n;
+    float sum=0;
+    printf("Enter the first term\n");
+    printf("Enter the common difference\n");
+    printf("Enter the number of terms\n");
+    scanf("%d %d %d",&a,&r,&n);
+    if(r<0){
+        sum = a*(1 - pow(r,n))/(1-r);
+    }
+    else if(r>0){
+        sum = a*(pow(r,n)-1)/(r-1);
+    }
+    printf("Sum is %f",sum);
+    return 0;
+}
