@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int TowerofHanoi(int,char,char,char);
+int main()
+{
+    int n;
+    printf("Enter the number of disks that are present in the game\n");
+    scanf("%d",&n);
+    TowerofHanoi(n,'A','B','C');
+
+    return 0;
+}
+
+int TowerofHanoi(int n,char source,char med,char dest){
+if(n==1){
+    printf(" %d disk is moved from %c to %c\n",n,source,dest);
+    return;
+}
+TowerofHanoi(n-1,source,dest,med);
+printf("%d disk is moved from %c to %c\n",n,source,dest);
+TowerofHanoi(n-1,med,source,dest);
+
+}
